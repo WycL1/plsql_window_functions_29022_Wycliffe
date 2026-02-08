@@ -109,10 +109,10 @@ ORDER BY t.transaction_date DESC;
 ```
 
 **Result:**  
-![INNER JOIN Result](screenshots/1_inner_join.png)
+![INNER JOIN Result](<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/bd5cd283-0652-4067-81c5-e38cf6e0da78" />)
 
 **Business Interpretation:**  
-This query retrieves all 30 completed transactions with full customer and branch information. It shows that corporate customers like TechHub Ltd and AgriCoop Rwanda have significantly higher transaction amounts (averaging 2.5M RWF) compared to individual customers (averaging 450K RWF). The Kigali region branches processed the highest transaction volumes.
+This query shows all 30 completed transactions with full customer and branch  information. It shows that corporate customers like TechHub Ltd and AgriCoop Rwanda have significantly higher transaction amounts (averaging 2.5M RWF) compared to individual customers (averaging 450K RWF). 
 
 ---
 
@@ -137,7 +137,7 @@ ORDER BY c.registration_date;
 ```
 
 **Result:**  
-![LEFT JOIN Result](screenshots/2_left_join.png)
+![LEFT JOIN Result](<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/3bcaeaad-d08f-4141-a8c6-a03000ce55e6" />)
 
 **Business Interpretation:**  
 This query identifies 8 customers who registered accounts but have never made any transactions. These inactive accounts represent missed revenue opportunities and should be targeted for re-engagement campaigns. Most inactive customers are individual account holders who registered in 2022, suggesting they may have lost interest shortly after registration.
@@ -164,7 +164,7 @@ ORDER BY b.region, b.branch_name;
 ```
 
 **Result:**  
-![RIGHT JOIN Result](screenshots/3_right_join.png)
+![RIGHT JOIN Result](<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/2d188228-40ad-4fc4-b409-fb28ee4250cc" />)
 
 **Business Interpretation:**  
 This query reveals 3 branches (Gicumbi, Kayonza, and Kirehe) that have processed zero transactions despite being operational. These underperforming branches may face challenges with customer acquisition, location accessibility, or local market competition. Management should investigate whether these branches need additional marketing support, staff training, or potential closure to optimize resources.
@@ -197,7 +197,7 @@ ORDER BY
 ```
 
 **Result:**  
-![FULL OUTER JOIN Result](screenshots/4_full_outer_join.png)
+![FULL OUTER JOIN Result](<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/6319514c-c8d1-4b23-8f49-c5f08995453e" />)
 
 **Business Interpretation:**  
 This comprehensive query shows all customers and branches regardless of transaction history. It reveals both active relationships (customers with transactions at specific branches) and gaps in the business (inactive customers and underutilized branches). This full view is essential for strategic planning, helping management identify which customer-branch combinations are working and which need attention or restructuring.
@@ -224,7 +224,7 @@ INNER JOIN Customers c2
 ORDER BY c1.region, c1.customer_name;
 ```
 **Result:**  
-![SELF JOIN Result](screenshots/5_self_join.png)
+![SELF JOIN Result](<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/642b4a55-7476-4c13-81cf-33df7fd63783" />)
 
 **Business Interpretation:**  
 This query identifies customer pairs within the same region, useful for analyzing regional market density and potential referral opportunities. The Kigali region shows the highest customer clustering with multiple pairs, indicating strong market penetration. This analysis can help design region-specific loyalty programs where existing customers refer others in their area, or identify regions with low customer density that need targeted acquisition campaigns.
@@ -237,7 +237,7 @@ This query identifies customer pairs within the same region, useful for analyzin
 **Purpose:** Identify top-performing branches in each region
 
 **Result:**  
-![Ranking Functions](screenshots/6_ranking_functions.png)
+![Ranking Functions](<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/d2fb87c0-3b77-4885-bab8-76d3a861e9ef" />)
 
 **Interpretation:**  
 This query ranks branches within each region by transaction volume. In Kigali region, Gasabo Branch ranks #1 with 4.7M RWF in transactions, while Nyarugenge ranks #2 with 4.05M RWF. The three ranking functions show different behaviors: RANK() can have gaps in numbering when there are ties, DENSE_RANK() has no gaps, and ROW_NUMBER() assigns unique numbers even for ties.
@@ -248,7 +248,7 @@ This query ranks branches within each region by transaction volume. In Kigali re
 **Purpose:** Identify VIP customers for premium services
 
 **Result:**  
-![Customer Ranking](screenshots/7_customer_ranking.png)
+![Customer Ranking](<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/75f65873-9a9a-4612-acfd-1bfacbb4751d" />)
 
 **Interpretation:**  
 This identifies top customers by total transaction value. AgriCoop Rwanda leads with 6.7M RWF, followed by BuildCo Ltd (5.5M RWF) and TechHub Ltd (4.8M RWF). All top three are corporate customers, confirming that corporate accounts generate significantly higher value.
@@ -261,7 +261,7 @@ This identifies top customers by total transaction value. AgriCoop Rwanda leads 
 **Purpose:** Track cumulative revenue growth over time
 
 **Result:**  
-![Running Total](screenshots/8_running_total.png)
+![Running Total](<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/a53e8c8d-ae63-41bb-b9d4-df4bd5f610bb" />)
 
 **Interpretation:**  
 This shows cumulative revenue growth over time. By January 2025, total cumulative revenue reached 33.83M RWF. The running total demonstrates consistent growth with December 2024 showing the highest monthly revenue (15.78M RWF) due to year-end corporate transactions.
@@ -272,7 +272,7 @@ This shows cumulative revenue growth over time. By January 2025, total cumulativ
 **Purpose:** Compare individual branches to regional averages
 
 **Result:**  
-![Branch Aggregates](screenshots/9_branch_aggregates.png)
+![Branch Aggregates](<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/eae883f0-81bc-4f81-9945-ce2721b24a75" />)
 
 **Interpretation:**  
 This compares each branch against regional performance metrics. Gasabo Branch significantly outperforms the Kigali regional average (4.7M vs 3.18M average), while some branches fall below their regional benchmarks.
@@ -285,7 +285,7 @@ This compares each branch against regional performance metrics. Gasabo Branch si
 **Purpose:** Analyze transaction growth patterns
 
 **Result:**  
-![LAG/LEAD Growth](screenshots/10_lag_lead_growth.png)
+![LAG/LEAD Growth](<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/eae883f0-81bc-4f81-9945-ce2721b24a75" />)
 
 **Interpretation:**  
 This analysis reveals transaction growth patterns across months. November 2024 showed 75.8% growth compared to October, while December experienced an impressive 128.4% surge driven by year-end corporate activities.
@@ -296,7 +296,7 @@ This analysis reveals transaction growth patterns across months. November 2024 s
 **Purpose:** Track individual customer behavior patterns
 
 **Result:**  
-![Customer Frequency](screenshots/11_customer_frequency.png)
+![Customer Frequency](<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/0dc67c62-7471-4fea-9033-9c0d92ea1535" />)
 
 **Interpretation:**  
 This tracks individual customer behavior patterns over time. Customers like Kamanzi David show consistent high-value transactions every 60-65 days, indicating regular business cycles.
@@ -309,7 +309,7 @@ This tracks individual customer behavior patterns over time. Customers like Kama
 **Purpose:** Segment customers for targeted marketing
 
 **Result:**  
-![NTILE Quartiles](screenshots/12_ntile_quartiles.png)
+![NTILE Quartiles](<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/eab022df-b589-4ca9-8905-5a53f0169fdd" />)
 
 **Interpretation:**  
 This segments customers into four quartiles based on spending behavior. Quartile 1 contains high-value customers who have spent over 4.8M RWF and represent the top 25% by value. These VIP customers should receive premium services and dedicated account managers.
@@ -320,7 +320,7 @@ This segments customers into four quartiles based on spending behavior. Quartile
 **Purpose:** Identify top performers within each region
 
 **Result:**  
-![Regional Quartiles](screenshots/13_regional_quartiles.png)
+![Regional Quartiles](<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/24e24bdb-ee41-4593-8533-979cdd9afc1f" />)
 
 **Interpretation:**  
 This creates region-specific customer segments, identifying top performers within each geographic area rather than nationally. This regional segmentation enables customized marketing strategies that account for different market sizes.
@@ -342,6 +342,50 @@ Key findings:
 - Corporate customers generate 70% of total revenue despite being only 25% of customer base
 - December 2024 was the highest revenue month with 15.78M RWF
 - Top 3 customers (AgriCoop, BuildCo, TechHub) contribute 50% of total revenue
+### Diagnostic Analysis - Why Did It Happen?
+1. **Regional Performance Gap:**
+   - Kigali's dominance stems from higher dominance of corporate customers (5 out of 7 total).
+   - Corporate customers have 5x higher average transaction rate than individuals customers.
+   - City  regions have better infrastructure and business coverage.
+
+2. **Inactive Accounts:**
+   - 40% of customers (8 out of 20) have never transacted.
+   - Most inactive accounts opened in 2022, suggesting poor onboarding or lack of engagement.
+   - No clear follow-up strategy after account opening.
+
+3. **Branch Underperformance:**
+   - Three branches (Gicumbi, Kayonza, Kirehe) have zero transactions.
+   - All underperforming branches are in rural regions.
+   - These branches opened in 2020-2021 but failed to attract customers.
+
+4. **Seasonal Patterns:**
+   - December revenue surge (128% growth) driven by year-end corporate tax payments and bonuses.
+   - January normalization indicates assumed  seasonal cycle.
+
+### Prescriptive Analysis - What Should Be Done?
+
+**Strategic Initiatives:**
+1. **Geographic Expansion:**
+   - Focus corporate customer acquisition if possible SMEs in underserved regions.
+   - Design region-specific  services.
+
+2. **Customer Segmentation:**
+   - Execute tiered service model based on quartile rankings.
+   - Create upselling campaigns to motivate  Quartile 3-4 customers for moving up.
+   - Create referral programs leveraging regional customer clusters.
+
+3. **Performance Monitoring:**
+   - Set branch-level targets based on regional benchmarks.
+   - Track month-over-month rise to identify trends early.
+2. **Branch Optimization:**
+   - Conduct feasibility study on underperforming branches.
+
+5. **VIP Customer Program:**
+   - Create dedicated corporate banking team for top 3 customers.
+   - Offer customized products and premium services to Quartile 1 customers.
+   - Implement quarterly business reviews with high-value accounts.
+
+---
 
 ## 💡 Key Insights
 
