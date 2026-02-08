@@ -140,7 +140,7 @@ ORDER BY c.registration_date;
 ![LEFT JOIN Result](<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/3bcaeaad-d08f-4141-a8c6-a03000ce55e6" />)
 
 **Business Interpretation:**  
-This query identifies 8 customers who registered accounts but have never made any transactions. These inactive accounts represent missed revenue opportunities and should be targeted for re-engagement campaigns. Most inactive customers are individual account holders who registered in 2022, suggesting they may have lost interest shortly after registration.
+his query provides 8 customers who registered accounts however they havent  made any transactions. These inactive accounts represent missed revenue opportunities and should be targeted for re-engagement campaigns.
 
 ---
 
@@ -167,7 +167,8 @@ ORDER BY b.region, b.branch_name;
 ![RIGHT JOIN Result](<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/2d188228-40ad-4fc4-b409-fb28ee4250cc" />)
 
 **Business Interpretation:**  
-This query reveals 3 branches (Gicumbi, Kayonza, and Kirehe) that have processed zero transactions despite being operational. These underperforming branches may face challenges with customer acquisition, location accessibility, or local market competition. Management should investigate whether these branches need additional marketing support, staff training, or potential closure to optimize resources.
+This query describes  3 branches (Gicumbi, Kayonza, and Kirehe) that have   zero transactions despite being open and functioning.  Management should dive in and have a look  whether these branches need additional  marketing support, staff training, or potential closure to optimize resources.
+
 
 ---
 
@@ -200,7 +201,8 @@ ORDER BY
 ![FULL OUTER JOIN Result](<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/6319514c-c8d1-4b23-8f49-c5f08995453e" />)
 
 **Business Interpretation:**  
-This comprehensive query shows all customers and branches regardless of transaction history. It reveals both active relationships (customers with transactions at specific branches) and gaps in the business (inactive customers and underutilized branches). This full view is essential for strategic planning, helping management identify which customer-branch combinations are working and which need attention or restructuring.
+This comprehensive query shows all customers and branches regardless of transaction  history. It reveals both active relationships (customers with transactions at specific  branches) and gaps ot space for improvement in the business (inactive customers and underutilized branches).  This full view is essential for strategic planning, aiding management to  identify  which customer-branch combinations are performing well and which need attention or restructuring.
+
 
 ---
 
@@ -227,7 +229,7 @@ ORDER BY c1.region, c1.customer_name;
 ![SELF JOIN Result](<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/642b4a55-7476-4c13-81cf-33df7fd63783" />)
 
 **Business Interpretation:**  
-This query identifies customer pairs within the same region, useful for analyzing regional market density and potential referral opportunities. The Kigali region shows the highest customer clustering with multiple pairs, indicating strong market penetration. This analysis can help design region-specific loyalty programs where existing customers refer others in their area, or identify regions with low customer density that need targeted acquisition campaigns.
+This query provides customer pairs within the same places, useful for analyzing regional market density and potential referral opportunities.  This analysis can help design region-specific  programs where existing customers refer others in their area, or identify regions with low customer density that need targeted advertisements campaigns.
 
 ## 📊 Part B: Window Functions
 
