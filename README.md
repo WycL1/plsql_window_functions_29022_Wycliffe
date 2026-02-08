@@ -14,7 +14,7 @@ SQL JOINs and Window Functions project for INSY 8311
 ## 🎯 Business Problem
 ### Business Context
 
-Bank Rwanda is a commercial bank that operates 15 branches in 5 regions, including Kigali, Northern, Southern, Eastern, and Western. It provides banking services to both individuals and companies, including various account services such as saving, current, and fixed deposit accounts.
+T Bank Rwanda is a commercial bank that operates 15 branches in 5 regions, including Kigali, Northern, Southern, Eastern, and Western. It provides banking services to both individuals and companies, including various account services such as saving, current, and fixed deposit accounts.
 
 ### Data Challenge 
 Currently, Bank has difficulties telling apart valuable customers from dormant accounts, as well as distinguishing between various branches and regions. For example, the management cannot easily compare the performance of different branches and tell whether certain kinds of accounts are associated with the most transactions in various regions, leading to loses as well as wastage of marketing expenses. 
